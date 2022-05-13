@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,13 +9,15 @@ main{
     margin: 0;
     padding: 0;
     
-    border: 1.5px solid rgb(39, 39, 39);
+    border-left-style: 1px solid black;
     border-radius: 5px;
 }
 header{
+    margin: 0;
+    padding: 10px;
     height: 30px;
     border-radius: 5px;
-    border: 1px solid rgb(39, 39, 39);
+    border: 1px solid cadetblue;
     background-color: cadetblue;
 }
 
