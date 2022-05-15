@@ -1,6 +1,9 @@
 <article>
     <label>WishList:</label>
     <ul>
-        <li></li>
+        <li *ngFor="let wish of wishlist$ | async">
+            <span>{{ wish.bookname }}</span>
+            <button (click)="deleteFromWish(wish.id)">DEL</button>
+        </li>
     </ul>
 </article>

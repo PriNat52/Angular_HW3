@@ -1,18 +1,25 @@
 <article>
   <label class="topic">Result: </label>
+
   <ul>
-    <li>
-      <figure>
-        <img src="" alt="Site Work" width="220px" height="220px" />
-      </figure>
-    </li>
-    <li>
+    <li *ngFor="let book of booklist$ | async" (click)="addToWish(book.id)">
       <div class="content">
-          <label>Book Name: </label>
-          <label>Publisher: </label>
-          <label>Publisher Date: </label>
-          <label>Description: </label>
+          <img
+            src="{{ book.thumbnail }}"
+            alt="Site Work"
+            width="220px"
+            height="220px"
+          />
+          <br />
+          <p>
+            <b>Book Name:</b> {{ book.bookname }}<br />
+            <b>Publisher:</b> {{ book.publisher }}<br />
+            <b>Publisher Date:</b> {{ book.date }}<br />
+            <b>Description:</b> {{ book.description }}<br />
+          </p>       
       </div>
+      <br />
     </li>
   </ul>
+
 </article>

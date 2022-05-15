@@ -1,8 +1,10 @@
 article {
   margin: 20px;
-  border: 1px solid black;
+  padding: 20px;
+
+  font-size: 16px;
   color: black;
-  background-color: white;
+  background-color: rgb(247, 247, 217);
   box-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px rgb(50, 101, 149);
   border-radius: 15px;
 }
@@ -10,31 +12,33 @@ article {
 .topic {
   margin: 10px;
   font-size: 20px;
+  color: rgb(50, 101, 149);
 }
 
-div {
-  display: grid;
-  overflow: visible;
+.content {
+  display: inline-flex; 
+  overflow:hidden;
 }
 
-figure {
-  position: right;
+img {
   border: 1px solid black;
+  vertical-align:text-top;
 }
+
 ul {
-  margin: 0;
+  margin: 10px;
   padding: 5px;
 
-  height: 400px;
-  width: 300px;
-
-  display: flex;
-  overflow: visible;
+  justify-content: space-around;
   list-style-type: none;
 }
 
 ul li {
-  width: 80%;
+  width: 100%;
   line-height: 15px;
-  justify-content: center;
+  justify-content: space-around;
+}
+ul li:hover{
+  border-radius: 10px;
+  box-shadow: 5px 2px 2px gray;
 }

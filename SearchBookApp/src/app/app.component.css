@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: rgb(199, 239, 241);
 }
 main{
     height: 100vh;
@@ -12,13 +13,9 @@ main{
     border-left-style: 1px solid black;
     border-radius: 5px;
 }
-header{
+mat-tab label{
     margin: 0;
     padding: 10px;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid cadetblue;
-    background-color: cadetblue;
 }
 
 div{

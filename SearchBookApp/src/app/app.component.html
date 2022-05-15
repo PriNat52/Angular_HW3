@@ -1,13 +1,17 @@
 <body>
-  <header>
-    <h2>Search For Books</h2>
-  </header>
-  <main>
-    <app-search-input></app-search-input>
-  
-    <div>
-      <app-booklist></app-booklist>
+  <mat-tab-group>
+    <mat-tab label="Search For Books">
+      <main>
+        <app-search-input></app-search-input>
+
+        <div>
+          <app-booklist></app-booklist>
+          <app-wishlist></app-wishlist>
+        </div>
+      </main>
+    </mat-tab>
+    <mat-tab label="Wishlist"> 
       <app-wishlist></app-wishlist>
-    </div>
-  </main>
+    </mat-tab>
+  </mat-tab-group>
 </body>
